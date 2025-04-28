@@ -11,6 +11,7 @@ import { View, Platform, StyleSheet, Image, Text } from 'react-native';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer'; 
 import { Icon } from '@rneui/themed'; 
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { colorGaztaroaClaro } from '../comun/comun'; 
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -169,7 +170,7 @@ function DrawerNavegador() {
       screenOptions={{ 
         headerShown: false, 
         drawerStyle: { 
-          backgroundColor: '#c2d3da', 
+          backgroundColor: colorGaztaroaClaro, 
         },
         drawerActiveTintColor: '#015afc',
         drawerInactiveTintColor: 'gray',
